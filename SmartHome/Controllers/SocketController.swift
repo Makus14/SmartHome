@@ -1,21 +1,19 @@
 //
-//  ZoyaController.swift
+//  SocketController.swift
 //  SmartHome
 //
-//  Created by Mac on 31/01/2023.
+//  Created by Mac on 01/02/2023.
 //
 
 import UIKit
 
-class ZoyaController: UIViewController {
+class SocketController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
-
 
 
 }

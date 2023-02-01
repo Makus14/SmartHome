@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     
     let massTopCollection: [String] = ["Умный дом", "Детская", "Коридор", "Кухня", "Спальня"]
     
-    var enumNamesPoints: [EnumNames] = [.lighting, .habitat, .zoya]
+    var enumNamesPoints: [EnumNames] = [.lighting, .habitat, .socket, .sensor]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -107,9 +107,12 @@ extension ViewController: UICollectionViewDelegate {
                 case .habitat:
                     let habitatVC = story.instantiateViewController(withIdentifier: "HabitatController") as! HabitatController
                     push(vc: habitatVC)
-                case .zoya:
-                    let zoyaVC = story.instantiateViewController(withIdentifier: "ZoyaController") as! ZoyaController
-                    push(vc: zoyaVC)
+                case .socket:
+                    let socketVC = story.instantiateViewController(withIdentifier: "SocketController") as! SocketController
+                    push(vc: socketVC)
+                case .sensor:
+                    let sensorVC = story.instantiateViewController(withIdentifier: "SensorController") as! SensorController
+                    push(vc: sensorVC)
                 default:
                      UIViewController()
             }
