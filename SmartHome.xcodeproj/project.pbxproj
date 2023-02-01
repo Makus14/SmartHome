@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD0434CC298AF85400C865D8 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD0434CB298AF85400C865D8 /* Media.xcassets */; };
 		BD9488F3298AF26C00E2A0E5 /* SocketController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9488F2298AF26C00E2A0E5 /* SocketController.swift */; };
 		BD9488F5298AF28000E2A0E5 /* SensorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9488F4298AF28000E2A0E5 /* SensorController.swift */; };
 		BD95567D298977E300C3CEB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD95567C298977E300C3CEB4 /* AppDelegate.swift */; };
 		BD95567F298977E300C3CEB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD95567E298977E300C3CEB4 /* SceneDelegate.swift */; };
 		BD955681298977E300C3CEB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD955680298977E300C3CEB4 /* ViewController.swift */; };
 		BD955684298977E300C3CEB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD955682298977E300C3CEB4 /* Main.storyboard */; };
-		BD955686298977E500C3CEB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD955685298977E500C3CEB4 /* Assets.xcassets */; };
 		BD955689298977E500C3CEB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD955687298977E500C3CEB4 /* LaunchScreen.storyboard */; };
 		BD9556932989792900C3CEB4 /* TopCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9556912989792900C3CEB4 /* TopCollectionViewCell.swift */; };
 		BD9556942989792900C3CEB4 /* TopCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD9556922989792900C3CEB4 /* TopCollectionViewCell.xib */; };
@@ -25,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD0434CB298AF85400C865D8 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		BD9488F2298AF26C00E2A0E5 /* SocketController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketController.swift; sourceTree = "<group>"; };
 		BD9488F4298AF28000E2A0E5 /* SensorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorController.swift; sourceTree = "<group>"; };
 		BD955679298977E300C3CEB4 /* SmartHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,7 +33,6 @@
 		BD95567E298977E300C3CEB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BD955680298977E300C3CEB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BD955683298977E300C3CEB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BD955685298977E500C3CEB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD955688298977E500C3CEB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD95568A298977E500C3CEB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD9556912989792900C3CEB4 /* TopCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -82,9 +82,9 @@
 				BD95567E298977E300C3CEB4 /* SceneDelegate.swift */,
 				BD955680298977E300C3CEB4 /* ViewController.swift */,
 				BD955682298977E300C3CEB4 /* Main.storyboard */,
-				BD955685298977E500C3CEB4 /* Assets.xcassets */,
 				BD955687298977E500C3CEB4 /* LaunchScreen.storyboard */,
 				BD95568A298977E500C3CEB4 /* Info.plist */,
+				BD0434CB298AF85400C865D8 /* Media.xcassets */,
 			);
 			path = SmartHome;
 			sourceTree = "<group>";
@@ -184,10 +184,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD0434CC298AF85400C865D8 /* Media.xcassets in Resources */,
 				BD9556942989792900C3CEB4 /* TopCollectionViewCell.xib in Resources */,
 				BD955689298977E500C3CEB4 /* LaunchScreen.storyboard in Resources */,
 				BD9556992989828600C3CEB4 /* BottomCollectionViewCell.xib in Resources */,
-				BD955686298977E500C3CEB4 /* Assets.xcassets in Resources */,
 				BD955684298977E300C3CEB4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

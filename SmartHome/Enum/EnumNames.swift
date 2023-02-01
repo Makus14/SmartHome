@@ -26,10 +26,10 @@ enum EnumNames: CaseIterable {
     
     var image: UIImage? {
         switch self {
-            case .lighting:         return UIImage(systemName: "wifi.square.fill")
-            case .habitat:          return UIImage(systemName: "eraser.fill")
-            case .socket:           return UIImage(systemName: "wifi.square.fill")
-            case .sensor:           return UIImage(systemName: "wifi.square.fill")
+            case .lighting:         return UIImage(named: "Lamp")
+            case .habitat:          return UIImage(named: "habitat")
+            case .socket:           return UIImage(named: "socket")
+            case .sensor:           return UIImage(named: "sensor")
                 
         }
     }
