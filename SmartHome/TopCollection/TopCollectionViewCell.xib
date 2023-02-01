@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gTV-IL-0wX" customClass="TopCollectionViewCell" customModule="SmartHome" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="314" height="97"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="314" height="97"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gBr-fR-OGF">
+                        <rect key="frame" x="0.0" y="0.0" width="314" height="97"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jrR-KO-e3d">
+                                <rect key="frame" x="10" y="10" width="294" height="77"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="jrR-KO-e3d" firstAttribute="leading" secondItem="gBr-fR-OGF" secondAttribute="leading" constant="10" id="PBk-hj-peY"/>
+                            <constraint firstItem="jrR-KO-e3d" firstAttribute="top" secondItem="gBr-fR-OGF" secondAttribute="top" constant="10" id="beM-mr-d8g"/>
+                            <constraint firstAttribute="bottom" secondItem="jrR-KO-e3d" secondAttribute="bottom" constant="10" id="kYh-qf-wAa"/>
+                            <constraint firstAttribute="trailing" secondItem="jrR-KO-e3d" secondAttribute="trailing" constant="10" id="wGr-nr-Taw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="gBr-fR-OGF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="4bU-QU-4ZL"/>
+                <constraint firstItem="gBr-fR-OGF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="VZc-5A-BdJ"/>
+                <constraint firstAttribute="trailing" secondItem="gBr-fR-OGF" secondAttribute="trailing" id="i5s-JT-Gxi"/>
+                <constraint firstAttribute="bottom" secondItem="gBr-fR-OGF" secondAttribute="bottom" id="jda-cn-dXN"/>
+            </constraints>
+            <size key="customSize" width="314" height="97"/>
+            <connections>
+                <outlet property="labelTopCollection" destination="jrR-KO-e3d" id="hld-wP-WN9"/>
+            </connections>
+            <point key="canvasLocation" x="166.41221374045801" y="36.267605633802816"/>
+        </collectionViewCell>
+    </objects>
+</document>
