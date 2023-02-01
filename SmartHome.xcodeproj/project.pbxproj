@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD9488F3298AF26C00E2A0E5 /* SocketController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9488F2298AF26C00E2A0E5 /* SocketController.swift */; };
+		BD9488F5298AF28000E2A0E5 /* SensorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9488F4298AF28000E2A0E5 /* SensorController.swift */; };
 		BD95567D298977E300C3CEB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD95567C298977E300C3CEB4 /* AppDelegate.swift */; };
 		BD95567F298977E300C3CEB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD95567E298977E300C3CEB4 /* SceneDelegate.swift */; };
 		BD955681298977E300C3CEB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD955680298977E300C3CEB4 /* ViewController.swift */; };
@@ -20,10 +22,11 @@
 		BD95569C29898B0B00C3CEB4 /* EnumNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD95569B29898B0B00C3CEB4 /* EnumNames.swift */; };
 		BD95569E29898CD200C3CEB4 /* LightController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD95569D29898CD200C3CEB4 /* LightController.swift */; };
 		BD9556A029898D0C00C3CEB4 /* HabitatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD95569F29898D0C00C3CEB4 /* HabitatController.swift */; };
-		BD9556A229898D3D00C3CEB4 /* ZoyaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9556A129898D3D00C3CEB4 /* ZoyaController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD9488F2298AF26C00E2A0E5 /* SocketController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketController.swift; sourceTree = "<group>"; };
+		BD9488F4298AF28000E2A0E5 /* SensorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorController.swift; sourceTree = "<group>"; };
 		BD955679298977E300C3CEB4 /* SmartHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD95567C298977E300C3CEB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD95567E298977E300C3CEB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,7 +42,6 @@
 		BD95569B29898B0B00C3CEB4 /* EnumNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumNames.swift; sourceTree = "<group>"; };
 		BD95569D29898CD200C3CEB4 /* LightController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightController.swift; sourceTree = "<group>"; };
 		BD95569F29898D0C00C3CEB4 /* HabitatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitatController.swift; sourceTree = "<group>"; };
-		BD9556A129898D3D00C3CEB4 /* ZoyaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoyaController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +120,8 @@
 			children = (
 				BD95569D29898CD200C3CEB4 /* LightController.swift */,
 				BD95569F29898D0C00C3CEB4 /* HabitatController.swift */,
-				BD9556A129898D3D00C3CEB4 /* ZoyaController.swift */,
+				BD9488F2298AF26C00E2A0E5 /* SocketController.swift */,
+				BD9488F4298AF28000E2A0E5 /* SensorController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -196,11 +199,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD9488F3298AF26C00E2A0E5 /* SocketController.swift in Sources */,
 				BD9556932989792900C3CEB4 /* TopCollectionViewCell.swift in Sources */,
 				BD9556982989828600C3CEB4 /* BottomCollectionViewCell.swift in Sources */,
+				BD9488F5298AF28000E2A0E5 /* SensorController.swift in Sources */,
 				BD955681298977E300C3CEB4 /* ViewController.swift in Sources */,
 				BD9556A029898D0C00C3CEB4 /* HabitatController.swift in Sources */,
-				BD9556A229898D3D00C3CEB4 /* ZoyaController.swift in Sources */,
 				BD95567D298977E300C3CEB4 /* AppDelegate.swift in Sources */,
 				BD95569E29898CD200C3CEB4 /* LightController.swift in Sources */,
 				BD95567F298977E300C3CEB4 /* SceneDelegate.swift in Sources */,
