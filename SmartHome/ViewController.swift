@@ -26,20 +26,29 @@ class ViewController: UIViewController {
         bottomCollection.dataSource = self
         bottomCollection.delegate = self
         
+        gradient()
+        
         registerCell()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    func gradient() {
         let gradientLayer = CAGradientLayer()
         gradientLayer.type = .axial
         gradientLayer.frame = self.viewController.bounds
-        gradientLayer.colors = [UIColor.systemGreen.cgColor, UIColor.black.cgColor]
+        gradientLayer.colors = [UIColorFromHex(rgbValue: 0x1D392C, alpha: 1), UIColor.black.cgColor]
         gradientLayer.locations = [0, 0.25]
         self.viewController.layer.insertSublayer(gradientLayer, at: 0)
         self.topCollection.backgroundColor = UIColor(named: "")
     }
     
+    func UIColorFromHex(rgbValue:UInt32, alpha:Double=1.0)->UIColor {
+        let red = CGFloat((rgbValue & 0xFF0000) >> 16)/256.0
+        let green = CGFloat((rgbValue & 0xFF00) >> 8)/256.0
+        let blue = CGFloat(rgbValue & 0xFF)/256.0
 
+        return UIColor(red:red, green:green, blue:blue, alpha:CGFloat(alpha))
+    }
+    
     func registerCell() {
         let nib = UINib(nibName: TopCollectionViewCell.id, bundle: nil)
         topCollection.register(nib, forCellWithReuseIdentifier: TopCollectionViewCell.id)

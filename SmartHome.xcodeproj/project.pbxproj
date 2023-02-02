@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		BD0434CC298AF85400C865D8 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD0434CB298AF85400C865D8 /* Media.xcassets */; };
+		BD0434D2298B091F00C865D8 /* TitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0434D0298B091F00C865D8 /* TitleCollectionViewCell.swift */; };
+		BD0434D3298B091F00C865D8 /* TitleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD0434D1298B091F00C865D8 /* TitleCollectionViewCell.xib */; };
+		BD0434D8298B096E00C865D8 /* RoomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0434D6298B096E00C865D8 /* RoomCollectionViewCell.swift */; };
+		BD0434D9298B096E00C865D8 /* RoomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD0434D7298B096E00C865D8 /* RoomCollectionViewCell.xib */; };
+		BD0434DD298B09EB00C865D8 /* EnumLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0434DC298B09EB00C865D8 /* EnumLight.swift */; };
 		BD9488F3298AF26C00E2A0E5 /* SocketController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9488F2298AF26C00E2A0E5 /* SocketController.swift */; };
 		BD9488F5298AF28000E2A0E5 /* SensorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9488F4298AF28000E2A0E5 /* SensorController.swift */; };
 		BD95567D298977E300C3CEB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD95567C298977E300C3CEB4 /* AppDelegate.swift */; };
@@ -26,6 +31,11 @@
 
 /* Begin PBXFileReference section */
 		BD0434CB298AF85400C865D8 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		BD0434D0298B091F00C865D8 /* TitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCollectionViewCell.swift; sourceTree = "<group>"; };
+		BD0434D1298B091F00C865D8 /* TitleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleCollectionViewCell.xib; sourceTree = "<group>"; };
+		BD0434D6298B096E00C865D8 /* RoomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCollectionViewCell.swift; sourceTree = "<group>"; };
+		BD0434D7298B096E00C865D8 /* RoomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomCollectionViewCell.xib; sourceTree = "<group>"; };
+		BD0434DC298B09EB00C865D8 /* EnumLight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumLight.swift; sourceTree = "<group>"; };
 		BD9488F2298AF26C00E2A0E5 /* SocketController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketController.swift; sourceTree = "<group>"; };
 		BD9488F4298AF28000E2A0E5 /* SensorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorController.swift; sourceTree = "<group>"; };
 		BD955679298977E300C3CEB4 /* SmartHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +65,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD0434CD298B081400C865D8 /* Collections */ = {
+			isa = PBXGroup;
+			children = (
+				BD0434CF298B084900C865D8 /* LightCollection */,
+				BD0434CE298B082300C865D8 /* ViewControllerCollection */,
+			);
+			path = Collections;
+			sourceTree = "<group>";
+		};
+		BD0434CE298B082300C865D8 /* ViewControllerCollection */ = {
+			isa = PBXGroup;
+			children = (
+				BD9556952989826900C3CEB4 /* BottomCollection */,
+				BD955690298978ED00C3CEB4 /* TopCollection */,
+			);
+			path = ViewControllerCollection;
+			sourceTree = "<group>";
+		};
+		BD0434CF298B084900C865D8 /* LightCollection */ = {
+			isa = PBXGroup;
+			children = (
+				BD0434D5298B095900C865D8 /* RoomCollection */,
+				BD0434D4298B093F00C865D8 /* TitleCollection */,
+			);
+			path = LightCollection;
+			sourceTree = "<group>";
+		};
+		BD0434D4298B093F00C865D8 /* TitleCollection */ = {
+			isa = PBXGroup;
+			children = (
+				BD0434D0298B091F00C865D8 /* TitleCollectionViewCell.swift */,
+				BD0434D1298B091F00C865D8 /* TitleCollectionViewCell.xib */,
+			);
+			path = TitleCollection;
+			sourceTree = "<group>";
+		};
+		BD0434D5298B095900C865D8 /* RoomCollection */ = {
+			isa = PBXGroup;
+			children = (
+				BD0434D6298B096E00C865D8 /* RoomCollectionViewCell.swift */,
+				BD0434D7298B096E00C865D8 /* RoomCollectionViewCell.xib */,
+			);
+			path = RoomCollection;
+			sourceTree = "<group>";
+		};
+		BD0434DA298B099B00C865D8 /* EnumViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BD95569B29898B0B00C3CEB4 /* EnumNames.swift */,
+			);
+			path = EnumViewController;
+			sourceTree = "<group>";
+		};
+		BD0434DB298B09B200C865D8 /* EnumLight */ = {
+			isa = PBXGroup;
+			children = (
+				BD0434DC298B09EB00C865D8 /* EnumLight.swift */,
+			);
+			path = EnumLight;
+			sourceTree = "<group>";
+		};
 		BD955670298977E300C3CEB4 = {
 			isa = PBXGroup;
 			children = (
@@ -74,10 +145,9 @@
 		BD95567B298977E300C3CEB4 /* SmartHome */ = {
 			isa = PBXGroup;
 			children = (
+				BD0434CD298B081400C865D8 /* Collections */,
 				BD9556A3298AF03400C3CEB4 /* Controllers */,
 				BD95569A29898AEF00C3CEB4 /* Enum */,
-				BD9556952989826900C3CEB4 /* BottomCollection */,
-				BD955690298978ED00C3CEB4 /* TopCollection */,
 				BD95567C298977E300C3CEB4 /* AppDelegate.swift */,
 				BD95567E298977E300C3CEB4 /* SceneDelegate.swift */,
 				BD955680298977E300C3CEB4 /* ViewController.swift */,
@@ -110,7 +180,8 @@
 		BD95569A29898AEF00C3CEB4 /* Enum */ = {
 			isa = PBXGroup;
 			children = (
-				BD95569B29898B0B00C3CEB4 /* EnumNames.swift */,
+				BD0434DB298B09B200C865D8 /* EnumLight */,
+				BD0434DA298B099B00C865D8 /* EnumViewController */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -185,10 +256,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD0434CC298AF85400C865D8 /* Media.xcassets in Resources */,
+				BD0434D3298B091F00C865D8 /* TitleCollectionViewCell.xib in Resources */,
 				BD9556942989792900C3CEB4 /* TopCollectionViewCell.xib in Resources */,
 				BD955689298977E500C3CEB4 /* LaunchScreen.storyboard in Resources */,
 				BD9556992989828600C3CEB4 /* BottomCollectionViewCell.xib in Resources */,
 				BD955684298977E300C3CEB4 /* Main.storyboard in Resources */,
+				BD0434D9298B096E00C865D8 /* RoomCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,16 +272,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD0434DD298B09EB00C865D8 /* EnumLight.swift in Sources */,
 				BD9488F3298AF26C00E2A0E5 /* SocketController.swift in Sources */,
 				BD9556932989792900C3CEB4 /* TopCollectionViewCell.swift in Sources */,
 				BD9556982989828600C3CEB4 /* BottomCollectionViewCell.swift in Sources */,
 				BD9488F5298AF28000E2A0E5 /* SensorController.swift in Sources */,
 				BD955681298977E300C3CEB4 /* ViewController.swift in Sources */,
+				BD0434D2298B091F00C865D8 /* TitleCollectionViewCell.swift in Sources */,
 				BD9556A029898D0C00C3CEB4 /* HabitatController.swift in Sources */,
 				BD95567D298977E300C3CEB4 /* AppDelegate.swift in Sources */,
 				BD95569E29898CD200C3CEB4 /* LightController.swift in Sources */,
 				BD95567F298977E300C3CEB4 /* SceneDelegate.swift in Sources */,
 				BD95569C29898B0B00C3CEB4 /* EnumNames.swift in Sources */,
+				BD0434D8298B096E00C865D8 /* RoomCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
